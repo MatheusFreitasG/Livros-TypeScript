@@ -9,4 +9,9 @@ const listaDeLivros : LivroCategoria[] = [
 
 listaDeLivros.forEach(livro =>{
     livro.exibirDetalhes();
+    if(livro.eAntigo()){
+        console.log('É antigo')
+    }else{
+        console.log('Não é antigo')
+    }
 })
